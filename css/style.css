@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/babala.jpg") no-repeat center center/cover;
+  backdrop-filter: blur(2px);
+}
+
+main {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 40px 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-type {
+  display: flex;
+  align-items: center;
+}
+
+.search-type .search-type-item {
+  color: #2932e1;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.search-type-item span {
+  color: #434343;
+}
+
+.search-input {
+  margin-top: 20px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search-input input {
+  width: 400px;
+  background-color: transparent;
+  line-height: 32px;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  transition: all 0.2s;
+}
+
+.search-input input:focus {
+  width: 600px;
+}
+
+.search-input .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 1.5em;
+}
+
+.websites {
+  width: 100%;
+}
+
+.websites-item {
+  margin-top: 40px;
+}
+
+.websites-item h2 {
+  color: lightyellow;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.websites .websites-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 5px 20px 15px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+.websites .websites-list li {
+  list-style: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 5px 15px;
+  color: #434343;
+}
+
+.websites .websites-list li:nth-child(4n + 1) {
+  background-color: rgba(0, 163, 129, 0.8);
+}
+
+.websites .websites-list li:nth-child(4n + 2) {
+  background-color: rgba(78, 102, 221, 0.8);
+}
+
+.websites .websites-list li:nth-child(4n + 3) {
+  background-color: rgba(250, 230, 141, 0.8);
+}
+
+.websites .websites-list li:nth-child(4n + 4) {
+  background-color: rgba(237, 86, 16, 0.8);
+}
