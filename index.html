@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/font_4024294_fhsblxd0qoh.js"></script>
+    <script src="js/iconfont.js"></script>
     <title>搜索页</title>
-    <style type="text/css">
-      .icon {
-        width: 1em;
-        height: 1em;
-        vertical-align: -0.15em;
-        fill: currentColor;
-        overflow: hidden;
-      }
-    </style>
+    <style type="text/css"></style>
   </head>
-  <body>
+  <body class="preview">
+    <div class="setting">
+      <svg class="icon icon-setting" aria-hidden="true">
+        <use xlink:href="#icon-shezhi"></use>
+      </svg>
+      <svg class="icon icon-preview" aria-hidden="true">
+        <use xlink:href="#icon-fanhui"></use>
+      </svg>
+    </div>
     <main>
       <div class="search">
         <div class="search-type">
-          <button class="search-type-item">
+          <button data-type="baidu" class="search-type-item active">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-baidu"></use>
             </svg>
             <span>百度</span>
           </button>
-          <button class="search-type-item">
+          <button data-type="bing" class="search-type-item">
             <svg class="icon" aria-hidden="true">
               <rect fill=""></rect>
               <use xlink:href="#icon-Bing"></use>
@@ -37,59 +37,62 @@
         </div>
         <div class="search-input">
           <input type="text" placeholder="搜索" />
-          <svg class="icon" aria-hidden="true">
+          <svg id="search-icon" class="icon" aria-hidden="true">
             <use xlink:href="#icon-fangdajing"></use>
           </svg>
         </div>
       </div>
-      <div class="websites">
-        <div class="websites-item">
-          <h2>常用网站</h2>
-          <ul class="websites-list">
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-          </ul>
+      <div class="websites"></div>
+      <svg class="icon icon-add" aria-hidden="true">
+        <use xlink:href="#icon-tianjia"></use>
+      </svg>
+      <div class="modal modal-category">
+        <div class="filed">
+          <h4>请输入分类名称</h4>
+          <input
+            type="text"
+            name="category"
+            id="category"
+            placeholder="请输入分类名称"
+          />
+          <button class="btn confirm">确定</button>
+          <button class="btn cancel">取消</button>
         </div>
-        <div class="websites-item">
-          <h2>常用网站</h2>
-          <ul class="websites-list">
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-          </ul>
+      </div>
+      <div class="modal modal-edit">
+        <div class="filed">
+          <h4>请输入分类名称</h4>
+          <input
+            type="text"
+            name="edit"
+            id="edit"
+            placeholder="请输入分类名称"
+          />
+          <button class="btn confirm">确定</button>
+          <button class="btn cancel">取消</button>
         </div>
-        <div class="websites-item">
-          <h2>常用网站</h2>
-          <ul class="websites-list">
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-            <li>搜狐</li>
-            <li>百度</li>
-            <li>V2EX</li>
-            <li>谷歌</li>
-          </ul>
+      </div>
+      <div class="modal modal-add">
+        <div class="filed">
+          <h4>请输入网站名称</h4>
+          <input
+            type="text"
+            name="site-name"
+            id="site-name"
+            placeholder="请输入网站名称"
+          />
+          <h4>请输入网址</h4>
+          <input
+            type="text"
+            name="site-url"
+            id="site-url"
+            placeholder="请输入网址"
+          />
+          <button class="btn confirm">确定</button>
+          <button class="btn cancel">取消</button>
         </div>
       </div>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
